@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-import { style } from '@vanilla-extract/css';
+import {style} from '@vanilla-extract/css';
 
 export const footer = style({
 	margin: '3rem',

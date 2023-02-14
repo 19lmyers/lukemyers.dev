@@ -30,5 +30,5 @@
 </script>
 
 <Section className={pageSection} {style}>
-	<slot/>
+	<slot />
 </Section>

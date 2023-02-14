@@ -47,15 +47,15 @@
 {#if href}
 	<a class={className} {href}>
 		<span class={icon}>
-			<slot name="icon"/>
+			<slot name="icon" />
 		</span>
-		<slot name="text"/>
+		<slot name="text" />
 	</a>
 {:else}
 	<button class={className} {disabled}>
 		<span class={icon}>
-			<slot name="icon"/>
+			<slot name="icon" />
 		</span>
-		<slot name="text"/>
+		<slot name="text" />
 	</button>
 {/if}

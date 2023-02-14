@@ -27,5 +27,5 @@
 </script>
 
 <body class={baseTheme}>
-<slot/>
+	<slot />
 </body>

@@ -31,10 +31,10 @@
 {#if disabled}
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<a class={disabledLink} aria-disabled="true">
-		<slot/>
+		<slot />
 	</a>
 {:else}
 	<a class={link} {href}>
-		<slot/>
+		<slot />
 	</a>
 {/if}

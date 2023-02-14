@@ -55,10 +55,10 @@
 	</svelte:fragment>
 	<svelte:fragment slot="image">
 		<img
-				alt="Me!"
-				sizes="50svw"
-				src="/assets/images/header-960.webp"
-				srcset="/assets/images/header-640.webp 640w, /assets/images/header-960.webp 960w, /assets/images/header-1920.webp 1920w"
+			alt="Me!"
+			sizes="50svw"
+			src="/assets/images/header-960.webp"
+			srcset="/assets/images/header-640.webp 640w, /assets/images/header-960.webp 960w, /assets/images/header-1920.webp 1920w"
 		/>
 	</svelte:fragment>
 </SiteHeader>
@@ -152,20 +152,29 @@
 		<Heading>Projects</Heading>
 
 		<FlexLayout>
-			<Card>
-				<svelte:fragment slot="content">
-					<Heading>Portfolio Website</Heading>
-					<p><em>JAN – FEB 2023</em></p>
-					<p>&nbsp;</p>
-					<p>You're looking at it!</p>
-				</svelte:fragment>
-			</Card>
-			<Card>
+			<!--<Card>
 				<svelte:fragment slot="content">
 					<Heading>Unnamed Tasks App</Heading>
 					<p><em>2022 – 2023</em></p>
 					<p>&nbsp;</p>
 					<p>Summary coming soon!</p>
+				</svelte:fragment>
+			</Card>-->
+			<Card>
+				<svelte:fragment slot="content">
+					<Heading>Portfolio Website</Heading>
+					<p><em>JAN – FEB 2023</em></p>
+					<p>&nbsp;</p>
+					<p>
+						Created a fully server-side portfolio website using SvelteKit and Material Design.
+						Hosted via GitHub Pages.
+					</p>
+				</svelte:fragment>
+				<svelte:fragment slot="actions">
+					<Button href="https://github.com/19lmyers/lukemyers.dev">
+						<Icon slot="icon">open_in_new</Icon>
+						<svelte:fragment slot="text">View on GitHub</svelte:fragment>
+					</Button>
 				</svelte:fragment>
 			</Card>
 			<Card>
@@ -191,4 +200,4 @@
 	</PageSection>
 </main>
 
-<SiteFooter/>
+<SiteFooter />

@@ -32,5 +32,5 @@
 </script>
 
 <section class={className} {style}>
-	<slot/>
+	<slot />
 </section>

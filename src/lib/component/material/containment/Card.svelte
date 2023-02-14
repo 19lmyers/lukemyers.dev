@@ -43,14 +43,14 @@
 <Section {className} {style}>
 	{#if $$slots.image}
 		<picture class={picture}>
-			<slot name="image"/>
+			<slot name="image" />
 		</picture>
 	{/if}
 	<div class={content}>
-		<slot name="content"/>
+		<slot name="content" />
 		{#if $$slots.actions}
 			<div class={actions}>
-				<slot name="actions"/>
+				<slot name="actions" />
 			</div>
 		{/if}
 	</div>

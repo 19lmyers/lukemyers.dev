@@ -22,8 +22,8 @@
  * SOFTWARE.
  */
 
-import { globalStyle, style } from '@vanilla-extract/css';
-import { themeContract } from '$lib/theme';
+import {globalStyle, style} from '@vanilla-extract/css';
+import {themeContract} from '$lib/theme';
 
 const card = style({
 	borderRadius: '1.5rem',

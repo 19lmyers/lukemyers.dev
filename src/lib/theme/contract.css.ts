@@ -22,8 +22,8 @@
  * SOFTWARE.
  */
 
-import { createThemeContract } from '@vanilla-extract/css';
-import { themeTokensFromHex } from './tokens';
+import {createThemeContract} from '@vanilla-extract/css';
+import {themeTokensFromHex} from './tokens';
 
 const tokens = themeTokensFromHex('#6750A4');
 

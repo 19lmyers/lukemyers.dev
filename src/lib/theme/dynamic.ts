@@ -22,10 +22,10 @@
  * SOFTWARE.
  */
 
-import { assignInlineVars } from '@vanilla-extract/dynamic';
+import {assignInlineVars} from '@vanilla-extract/dynamic';
 
-import { themeContract } from './contract.css';
-import { themeTokensFromHex, themeTokensFromImage } from './tokens';
+import {themeContract} from './contract.css';
+import {themeTokensFromHex, themeTokensFromImage} from './tokens';
 
 export function dynamicColorTheme(hexColor: string) {
 	const tokens = themeTokensFromHex(hexColor);

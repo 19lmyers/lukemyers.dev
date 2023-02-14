@@ -22,8 +22,8 @@
  * SOFTWARE.
  */
 
-import type { PageServerLoad } from './$types';
-import { dynamicImageTheme } from '$lib/theme';
+import type {PageServerLoad} from './$types';
+import {dynamicImageTheme} from '$lib/theme';
 
 export const load = (async ({ fetch }) => {
 	return {

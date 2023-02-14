@@ -22,8 +22,8 @@
  * SOFTWARE.
  */
 
-import { style } from '@vanilla-extract/css';
-import { themeContract } from '$lib/theme';
+import {style} from '@vanilla-extract/css';
+import {themeContract} from '$lib/theme';
 
 const a = style({
 	textDecoration: 'inherit'

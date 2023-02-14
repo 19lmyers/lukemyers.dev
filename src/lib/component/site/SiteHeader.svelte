@@ -30,14 +30,14 @@
 {#if $$slots.image}
 	<header {style} class={header}>
 		<div class="{card} {overlay}">
-			<slot name="content"/>
+			<slot name="content" />
 		</div>
 		<picture class={picture}>
-			<slot name="image"/>
+			<slot name="image" />
 		</picture>
 	</header>
 {:else}
 	<header {style} class="{header} {card}">
-		<slot name="content"/>
+		<slot name="content" />
 	</header>
 {/if}

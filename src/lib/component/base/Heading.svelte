@@ -32,5 +32,5 @@
 </script>
 
 <svelte:element class={heading} data-level={level} this={tag}>
-	<slot/>
+	<slot />
 </svelte:element>

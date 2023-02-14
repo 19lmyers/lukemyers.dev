@@ -30,5 +30,5 @@
 </script>
 
 <p class={subhead} data-level={level}>
-	<slot/>
+	<slot />
 </p>

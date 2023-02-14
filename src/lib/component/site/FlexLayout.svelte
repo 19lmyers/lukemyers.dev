@@ -28,5 +28,5 @@
 </script>
 
 <div class={layout} {style}>
-	<slot/>
+	<slot />
 </div>
