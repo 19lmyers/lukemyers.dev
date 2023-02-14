@@ -22,8 +22,8 @@
  * SOFTWARE.
  */
 
-import {globalStyle, style} from '@vanilla-extract/css';
-import {themeContract} from '$lib/theme';
+import { globalStyle, style } from '@vanilla-extract/css';
+import { themeContract } from '$lib/theme';
 
 const card = style({
 	borderRadius: '1.5rem',
@@ -104,10 +104,19 @@ globalStyle(`${picture} img`, {
 	width: '100%',
 	height: '100%',
 	maxHeight: '35svh',
+	aspectRatio: '4/3',
 	objectFit: 'cover',
 	'@media': {
 		screen: {
 			borderRadius: '1.5rem'
+		},
+		'(prefers-color-scheme: light)': {
+			backgroundColor: themeContract.colorSchemes.light.primaryContainer,
+			color: themeContract.colorSchemes.light.onPrimaryContainer
+		},
+		'(prefers-color-scheme: dark)': {
+			backgroundColor: themeContract.colorSchemes.dark.primaryContainer,
+			color: themeContract.colorSchemes.dark.onPrimaryContainer
 		},
 		'(min-width: 640px)': {
 			maxHeight: '30svh'

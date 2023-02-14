@@ -22,8 +22,8 @@
  * SOFTWARE.
  */
 
-import {globalStyle, style} from '@vanilla-extract/css';
-import {themeContract} from '$lib/theme';
+import { globalStyle, style } from '@vanilla-extract/css';
+import { themeContract } from '$lib/theme';
 
 export const header = style({
 	borderRadius: '1.5rem',
@@ -116,10 +116,12 @@ export const picture = style({
 			borderRadius: '1.5rem'
 		},
 		'(prefers-color-scheme: light)': {
-			backgroundColor: themeContract.colorSchemes.light.primaryContainer
+			backgroundColor: themeContract.colorSchemes.light.primaryContainer,
+			color: themeContract.colorSchemes.light.onPrimaryContainer
 		},
 		'(prefers-color-scheme: dark)': {
-			backgroundColor: themeContract.colorSchemes.dark.primaryContainer
+			backgroundColor: themeContract.colorSchemes.dark.primaryContainer,
+			color: themeContract.colorSchemes.dark.onPrimaryContainer
 		},
 		'screen and (min-width: 640px)': {
 			transform: 'translateX(-10svw)'
