@@ -1,0 +1,29 @@
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '19'
+          cache: 'yarn'
+
+      - run: yarn install --frozen-lockfile
+
+      - run: yarn run format
+      - run: yarn run lint
+      - run: yarn run check
+
+      - run: yarn run build
+
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./build
+          cname: lukemyers.dev
+on: 
+  push:
+    branches: 
+    - main
