@@ -35,24 +35,44 @@ export const footer = style({
 });
 
 export const nav = style({
+	alignItems: 'center',
 	display: 'flex',
 	flex: '0 1 auto',
+	flexDirection: 'column',
 	gap: '1.5rem',
-	whiteSpace: 'nowrap'
+	whiteSpace: 'nowrap',
+	'@media': {
+		'(min-width: 640px)': {
+			flexDirection: 'row'
+		}
+	}
 });
 
 export const child = style({
 	display: 'flex',
+	flexDirection: 'column',
 	flexWrap: 'wrap',
 	flex: '0 1 auto',
 	gap: '1.5rem',
-	whiteSpace: 'nowrap'
+	textAlign: 'center',
+	whiteSpace: 'nowrap',
+	'@media': {
+		'(min-width: 640px)': {
+			flexDirection: 'row'
+		}
+	}
 });
 
 export const left = style([
 	child,
 	{
-		marginRight: 'auto'
+		marginBottom: '1.5rem',
+		'@media': {
+			'(min-width: 640px)': {
+				marginBottom: 'none',
+				marginRight: 'auto'
+			}
+		}
 	}
 ]);
 
