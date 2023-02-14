@@ -22,9 +22,9 @@
  * SOFTWARE.
  */
 
-import {globalStyle} from '@vanilla-extract/css';
+import { globalStyle } from '@vanilla-extract/css';
 
-import {themeContract} from './theme';
+import { themeContract } from './theme';
 
 globalStyle('*,*:before,*:after', {
 	boxSizing: 'border-box',

@@ -22,10 +22,10 @@
  * SOFTWARE.
  */
 
-import {createTheme} from '@vanilla-extract/css';
+import { createTheme } from '@vanilla-extract/css';
 
-import {themeContract} from './contract.css';
-import {themeTokensFromHex} from './tokens';
+import { themeContract } from './contract.css';
+import { themeTokensFromHex } from './tokens';
 
 const tokens = themeTokensFromHex('#bc1600'); // #6750A4
 

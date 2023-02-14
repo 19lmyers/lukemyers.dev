@@ -22,9 +22,9 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-	import {layout} from './FlexLayout.css';
+	import { layout } from "./FlexLayout.css";
 
-	export let style = '';
+	export let style: string | null = null;
 </script>
 
 <div class={layout} {style}>

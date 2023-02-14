@@ -23,8 +23,8 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./build
           cname: lukemyers.dev
-on: 
+on:
   push:
-    branches: 
-    - main
+    branches:
+      - main
   workflow_dispatch:

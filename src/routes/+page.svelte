@@ -22,7 +22,7 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-	import type {PageData} from './$types';
+	import type { PageData } from "./$types";
 
 	import {
 		Button,
@@ -34,9 +34,9 @@
 		SiteFooter,
 		SiteHeader,
 		Subhead
-	} from '$lib/component';
+	} from "$lib/component";
 
-	import {flexList} from './styles.css';
+	import { flexList } from "./styles.css";
 
 	export let data: PageData;
 </script>
@@ -172,8 +172,8 @@
 				</svelte:fragment>
 				<svelte:fragment slot="actions">
 					<Button href="https://github.com/19lmyers/lukemyers.dev">
-						<Icon slot="icon">open_in_new</Icon>
-						<svelte:fragment slot="text">View on GitHub</svelte:fragment>
+						<Icon>open_in_new</Icon>
+						<p>View on GitHub</p>
 					</Button>
 				</svelte:fragment>
 			</Card>
@@ -191,8 +191,8 @@
 				</svelte:fragment>
 				<svelte:fragment slot="actions">
 					<Button href="https://github.com/19lmyers/ThunderScout">
-						<Icon slot="icon">open_in_new</Icon>
-						<svelte:fragment slot="text">View on GitHub</svelte:fragment>
+						<Icon>open_in_new</Icon>
+						<p>View on GitHub</p>
 					</Button>
 				</svelte:fragment>
 			</Card>

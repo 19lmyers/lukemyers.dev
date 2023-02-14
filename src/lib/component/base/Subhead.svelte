@@ -22,11 +22,11 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-	import {getContext} from 'svelte';
+  import { getContext } from "svelte";
 
-	import {subhead} from './Subhead.css';
+  import { subhead } from "./Subhead.css";
 
-	export let level = Math.min(getContext('headingLevel'), 6) || 1;
+  export let level = Math.min(getContext('headingLevel'), 6) || 1;
 </script>
 
 <p class={subhead} data-level={level}>

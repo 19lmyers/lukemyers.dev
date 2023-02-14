@@ -22,11 +22,11 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-	import {Section} from '$lib/component';
+  import { Section } from "$lib/component";
 
-	import {pageSection} from './PageSection.css';
+  import { pageSection } from "./PageSection.css";
 
-	export let style = '';
+  export let style: string | null = null;
 </script>
 
 <Section className={pageSection} {style}>

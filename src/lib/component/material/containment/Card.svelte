@@ -22,13 +22,13 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-	import {Section} from '$lib/component';
+  import { Section } from "$lib/component";
 
-	import {CardType} from './types';
-	import {actions, content, elevated, filled, outlined, picture} from './Card.css';
+  import { CardType } from "./types";
+  import { actions, content, elevated, filled, outlined, picture } from "./Card.css";
 
-	export let type = CardType.Filled;
-	export let style = '';
+  export let type = CardType.Filled;
+	export let style: string | null = null;
 
 	let className: string;
 	if (type === CardType.Filled) {

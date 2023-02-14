@@ -22,9 +22,9 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-	import {disabledLink, link} from './A.css';
+  import { disabledLink, link } from "./A.css";
 
-	export let href: string;
+  export let href: string | null = null;
 	export let disabled = false;
 </script>
 

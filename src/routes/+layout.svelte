@@ -22,8 +22,8 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-	import {baseTheme} from '$lib/theme';
-	import '$lib/styles.css';
+  import { baseTheme } from "$lib/theme";
+  import "$lib/styles.css";
 </script>
 
 <body class={baseTheme}>

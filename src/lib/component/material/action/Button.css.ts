@@ -22,22 +22,24 @@
  * SOFTWARE.
  */
 
-import {style} from '@vanilla-extract/css';
-import {themeContract} from '$lib/theme';
+import { style } from '@vanilla-extract/css';
+import { themeContract } from '$lib/theme';
 
 const button = style({
 	alignItems: 'center',
 	backgroundColor: 'inherit',
 	border: 'none',
-	borderRadius: '1.75rem',
+	borderRadius: '20px',
 	cursor: 'pointer',
 	display: 'flex',
 	fontFamily: themeContract.typography.heading.family,
 	fontWeight: themeContract.typography.heading.weight,
 	fontSize: '.875rem',
+	gap: '0.5rem',
+	height: '40px',
 	letterSpacing: themeContract.typography.heading.letterSpacing,
 	lineHeight: '1',
-	margin: '0 0.25rem',
+	margin: '0.25rem',
 	overflow: 'hidden',
 	padding: '0.5rem 1rem',
 	position: 'relative',
@@ -235,7 +237,3 @@ export const text = style([
 		}
 	}
 ]);
-
-export const icon = style({
-	paddingRight: '.5rem'
-});

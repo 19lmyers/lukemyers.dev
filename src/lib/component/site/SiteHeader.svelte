@@ -22,9 +22,9 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-	import {card, header, overlay, picture} from './SiteHeader.css';
+  import { card, header, overlay, picture } from "./SiteHeader.css";
 
-	export let style = '';
+  export let style: string | null = null;
 </script>
 
 {#if $$slots.image}

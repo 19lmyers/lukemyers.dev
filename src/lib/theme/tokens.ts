@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-import type {Theme} from '@importantimport/material-color-utilities';
+import type { Theme } from '@importantimport/material-color-utilities';
 import {
 	argbFromHex,
 	argbFromRgb,

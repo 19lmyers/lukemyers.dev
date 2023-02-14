@@ -22,11 +22,11 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-	import {getContext} from 'svelte';
+  import { getContext } from "svelte";
 
-	import {heading} from './Heading.css';
+  import { heading } from "./Heading.css";
 
-	export let level = Math.min(getContext('headingLevel'), 6) || 1;
+  export let level = Math.min(getContext('headingLevel'), 6) || 1;
 
 	const tag = 'h' + level;
 </script>

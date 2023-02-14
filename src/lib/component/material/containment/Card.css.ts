@@ -129,7 +129,7 @@ export const content = style({
 });
 
 export const actions = style({
-	marginTop: '1rem',
+	marginTop: '0.75rem',
 	display: 'flex',
 	justifyContent: 'flex-end'
 });
