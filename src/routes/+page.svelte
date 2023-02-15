@@ -72,7 +72,7 @@
 				<svelte:fragment slot="content">
 					<Heading>Student Programmer (Android)</Heading>
 					<p><strong>Qualcomm Institute @ UC San Diego</strong></p>
-					<p><em>AUG 2021 – PRESENT</em></p>
+					<p><em>Aug 2021 – Present</em></p>
 					<p>&nbsp;</p>
 					<p>
 						Developed and maintained multiple Android applications; worked as the Android developer
@@ -84,7 +84,7 @@
 				<svelte:fragment slot="content">
 					<Heading>Computer Science Tutor</Heading>
 					<p><strong>UC San Diego</strong></p>
-					<p><em>JAN – JUN 2021</em></p>
+					<p><em>Jan – Jun 2021</em></p>
 					<p>&nbsp;</p>
 					<p>
 						Tutor for CSE 12 (Data Structures) + CSE 15L for two quarters. Graded programming
@@ -97,7 +97,7 @@
 				<svelte:fragment slot="content">
 					<Heading>Lead Programmer & Co-Captain</Heading>
 					<p><strong>FRC Team 980 ThunderBots</strong></p>
-					<p><em>SEP 2015 – AUG 2019</em></p>
+					<p><em>Sep 2015 – Aug 2019</em></p>
 					<p>&nbsp;</p>
 					<p>
 						Programmed four robots (C++ and Java) and two Arduino coprocessors over three
@@ -133,16 +133,15 @@
 
 		<FlexLayout>
 			<ul class={flexList}>
-				<li>6+ years of Java experience</li>
-				<li>3+ years of Android experience</li>
-				<li>1+ years of Kotlin experience</li>
+				<li>7+ years of Java experience</li> <!-- Q3 2015 -->
+				<li>3+ years of Android experience</li> <!-- Q3 2019 -->
+				<li>1+ years of Kotlin experience</li> <!-- Q3 2021 -->
 				<li>Experience with Jetpack Compose, Retrofit, Room, Hilt, and other libraries</li>
-				<li>Worked with C, C++, C#, SQL, and other programming languages</li>
 			</ul>
 			<ul class={flexList}>
+				<li>Worked with C, C++, C#, SQL, and other programming languages</li>
 				<li>Application design with Google’s Material Design system</li>
-				<li>Web development in HTML/CSS/JS</li>
-				<li>Server-side application deployment with Docker</li>
+				<li>Web development in HTML/CSS/TypeScript</li>
 				<li>Basic game development with Unity, Godot</li>
 			</ul>
 		</FlexLayout>
@@ -163,7 +162,7 @@
 			<Card>
 				<svelte:fragment slot="content">
 					<Heading>Portfolio Website</Heading>
-					<p><em>JAN – FEB 2023</em></p>
+					<p><em>Jan – Feb 2023</em></p>
 					<p>&nbsp;</p>
 					<p>
 						Created a fully server-side portfolio website using SvelteKit and Material Design.
