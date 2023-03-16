@@ -151,14 +151,23 @@
 		<Heading>Projects</Heading>
 
 		<FlexLayout>
-			<!--<Card>
+			<Card>
 				<svelte:fragment slot="content">
-					<Heading>Unnamed Tasks App</Heading>
+					<Heading>Tasks (KMM)</Heading>
 					<p><em>2022 – 2023</em></p>
 					<p>&nbsp;</p>
-					<p>Summary coming soon!</p>
+					<p>
+						Created a functional and colorful tasks app with Kotlin Multiplatform Mobile.
+						Built with Koin, Ktor, SQLDelight, and Jetpack Compose.
+					</p>
 				</svelte:fragment>
-			</Card>-->
+				<svelte:fragment slot="actions">
+					<Button href="https://github.com/19lmyers/tasks-kmm">
+						<Icon>open_in_new</Icon>
+						<p>View on GitHub</p>
+					</Button>
+				</svelte:fragment>
+			</Card>
 			<Card>
 				<svelte:fragment slot="content">
 					<Heading>Portfolio Website</Heading>
