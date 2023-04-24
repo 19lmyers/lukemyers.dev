@@ -28,6 +28,7 @@ import { themeContract } from '$lib/theme';
 const card = style({
 	borderRadius: '1.5rem',
 	minWidth: '250px',
+	maxWidth: '600px',
 	width: 'min-content',
 	height: 'min-content',
 	flex: '1 1 auto',
