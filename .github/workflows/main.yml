@@ -23,7 +23,7 @@ jobs:
 
       - run: yarn set version stable
 
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
 
       - run: yarn run format
       - run: yarn run lint
