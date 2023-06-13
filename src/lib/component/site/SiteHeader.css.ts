@@ -47,11 +47,11 @@ export const header = style({
 		},
 		'screen and (min-width: 640px) and (prefers-color-scheme: light)': {
 			color: themeContract.colorSchemes.light.onSurface,
-			backgroundColor: themeContract.colorSchemes.light.surface
+			backgroundColor: 'transparent'
 		},
 		'screen and (min-width: 640px) and (prefers-color-scheme: dark)': {
 			color: themeContract.colorSchemes.dark.onSurface,
-			backgroundColor: themeContract.colorSchemes.dark.surface
+			backgroundColor: 'transparent'
 		}
 	}
 });

@@ -27,6 +27,6 @@ import { createTheme } from '@vanilla-extract/css';
 import { themeContract } from './contract.css';
 import { themeTokensFromHex } from './tokens';
 
-const tokens = themeTokensFromHex('#bc1600'); // #6750A4
+const tokens = themeTokensFromHex('#bc1600');
 
 export const baseTheme = createTheme(themeContract, tokens);
