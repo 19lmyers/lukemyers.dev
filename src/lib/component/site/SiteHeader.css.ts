@@ -45,6 +45,11 @@ export const header = style({
 			alignItems: 'center',
 			justifyContent: 'center'
 		},
+		'screen and (min-width: 1920px)': {
+			marginLeft: 'auto',
+			marginRight: 'auto',
+			width: '75%'
+		},
 		'screen and (min-width: 640px) and (prefers-color-scheme: light)': {
 			color: themeContract.colorSchemes.light.onSurface,
 			backgroundColor: 'transparent'
@@ -59,19 +64,14 @@ export const header = style({
 export const card = style({
 	padding: '1.5rem',
 	minWidth: '250px',
-	width: 'auto',
 	overflowWrap: 'normal',
 	'@media': {
 		'screen and (min-width: 640px)': {
-			minWidth: '300px',
+			minWidth: '275px',
+			width: 'min-content',
 			padding: '2rem',
-			marginLeft: '3rem',
-			marginRight: '3rem',
-			flexDirection: 'column'
-		},
-		'screen and (min-width: 1024px)': {
-			marginLeft: '6rem',
-			marginRight: '6rem'
+			marginRight: '1.5rem',
+			borderRadius: '1.5rem'
 		},
 		'screen and (min-width: 1280px)': {
 			minWidth: '400px'
@@ -83,23 +83,6 @@ export const card = style({
 		'screen and (min-width: 640px) and (prefers-color-scheme: dark)': {
 			color: themeContract.colorSchemes.dark.onSurfaceVariant,
 			backgroundColor: themeContract.colorSchemes.dark.surfaceVariant
-		}
-	}
-});
-
-export const overlay = style({
-	padding: '1.5rem',
-	minWidth: '250px',
-	overflowWrap: 'normal',
-	'@media': {
-		'screen and (min-width: 640px)': {
-			minWidth: '300px',
-			padding: '2rem',
-			width: 'min-content',
-			height: 'min-content',
-			borderRadius: '1.5rem',
-			transform: 'translateX(2.5svw)',
-			zIndex: 1
 		}
 	}
 });
@@ -122,9 +105,6 @@ export const picture = style({
 		'(prefers-color-scheme: dark)': {
 			backgroundColor: themeContract.colorSchemes.dark.primaryContainer,
 			color: themeContract.colorSchemes.dark.onPrimaryContainer
-		},
-		'screen and (min-width: 640px)': {
-			transform: 'translateX(-10svw)'
 		}
 	}
 });

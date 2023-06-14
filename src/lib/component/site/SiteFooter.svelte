@@ -22,12 +22,12 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-  import { External, Navigation } from "$lib/navigation";
-  import { A } from "$lib/component";
+	import { External, Navigation } from '$lib/navigation';
+	import { A } from '$lib/component';
 
-  import { footer, left, nav, right } from "./SiteFooter.css";
+	import { footer, left, nav, right } from './SiteFooter.css';
 
-  export let style: string | null = null;
+	export let style: string | null = null;
 </script>
 
 <footer class={footer} {style}>

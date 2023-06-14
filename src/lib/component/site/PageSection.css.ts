@@ -32,6 +32,11 @@ export const pageSection = style({
 		},
 		'(min-width: 1024px)': {
 			margin: '4rem 6rem'
+		},
+		'(min-width: 1920px)': {
+			marginLeft: 'auto',
+			marginRight: 'auto',
+			width: '75%'
 		}
 	}
 });

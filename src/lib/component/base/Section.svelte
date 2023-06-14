@@ -22,7 +22,7 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-	import { getContext, setContext } from "svelte";
+	import { getContext, setContext } from 'svelte';
 
 	let level = (getContext('headingLevel') as number) + 1 || 2;
 

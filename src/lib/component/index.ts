@@ -40,6 +40,7 @@ export { default as Card } from './material/containment/Card.svelte';
 
 // Site
 export { default as FlexLayout } from './site/FlexLayout.svelte';
+export { default as HeroCard } from './site/HeroCard.svelte';
 export { default as PageSection } from './site/PageSection.svelte';
 export { default as SiteFooter } from './site/SiteFooter.svelte';
 export { default as SiteHeader } from './site/SiteHeader.svelte';

@@ -30,6 +30,11 @@ export const footer = style({
 		'(min-width: 1024px)': {
 			marginLeft: '6rem',
 			marginRight: '6rem'
+		},
+		'(min-width: 1920px)': {
+			marginLeft: 'auto',
+			marginRight: 'auto',
+			width: '75%'
 		}
 	}
 });

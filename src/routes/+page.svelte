@@ -22,21 +22,22 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-	import type { PageData } from "./$types";
+	import type { PageData } from './$types';
 
 	import {
 		Button,
 		Card,
 		FlexLayout,
 		Heading,
+		HeroCard,
 		Icon,
 		PageSection,
 		SiteFooter,
 		SiteHeader,
 		Subhead
-	} from "$lib/component";
+	} from '$lib/component';
 
-	import { flexList } from "./styles.css";
+	import { flexList } from './styles.css';
 
 	export let data: PageData;
 </script>
@@ -114,28 +115,48 @@
 		</FlexLayout>
 	</PageSection>
 
-	<!--<PageSection>
-        <Heading>Education</Heading>
-        <FlexLayout>
-            <Card>
-                <p slot="content">
-                    Describe my education at UC San Diego. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </Card>
-        </FlexLayout>
-    </PageSection>-->
+	<PageSection>
+		<Heading>Education</Heading>
+		<HeroCard style={data.theme.education}>
+			<svelte:fragment slot="image">
+				<img
+					alt="Me in my graduation regalia!"
+					sizes="50svw"
+					src="/assets/images/education-960.webp"
+					srcset="/assets/images/education-640.webp 640w, /assets/images/education-960.webp 960w, /assets/images/education-1920.webp 1920w"
+				/>
+			</svelte:fragment>
+			<svelte:fragment slot="content">
+				<p>
+					In 2023, I will graduate from the <strong>University of California San Diego</strong> with
+					a bachelor's in computer science. My degree gave me hands-on and theoretical experience with
+					areas including algorithms, computer architecture, machine learning, and software engineering.
+				</p>
+				<p>&nbsp;</p>
+				<strong>Coursework includes:</strong>
+				<ul>
+					<li>Advanced Data Structures</li>
+					<li>Software Engineering</li>
+					<li>Principles of Computer Operating Systems</li>
+					<li>Database System Applications</li>
+					<li>Web Client Languages</li>
+					<li>Online Database Analytics Applications</li>
+				</ul>
+			</svelte:fragment>
+		</HeroCard>
+	</PageSection>
 
 	<PageSection>
 		<Heading>Skills and Abilities</Heading>
 
 		<FlexLayout>
 			<ul class={flexList}>
-				<li>7+ years of Java experience</li> <!-- Q3 2015 -->
-				<li>3+ years of Android experience</li> <!-- Q3 2019 -->
-				<li>1+ years of Kotlin experience</li> <!-- Q3 2021 -->
+				<li>7+ years of Java experience</li>
+				<!-- Q3 2015 -->
+				<li>3+ years of Android experience</li>
+				<!-- Q3 2019 -->
+				<li>1+ years of Kotlin experience</li>
+				<!-- Q3 2021 -->
 				<li>Experience with Jetpack Compose, Retrofit, Room, Hilt, and other libraries</li>
 			</ul>
 			<ul class={flexList}>
@@ -157,8 +178,8 @@
 					<p><em>2022 – 2023</em></p>
 					<p>&nbsp;</p>
 					<p>
-						Created a functional and colorful tasks app with Kotlin Multiplatform Mobile.
-						Built with Koin, Ktor, SQLDelight, and Jetpack Compose.
+						Created a functional and colorful tasks app with Kotlin Multiplatform Mobile. Built with
+						Koin, Ktor, SQLDelight, and Jetpack Compose.
 					</p>
 				</svelte:fragment>
 				<svelte:fragment slot="actions">

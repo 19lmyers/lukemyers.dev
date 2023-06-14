@@ -28,7 +28,8 @@ import { dynamicImageTheme } from '$lib/theme';
 export const load = (async ({ fetch }) => {
 	return {
 		theme: {
-			header: await dynamicImageTheme(fetch, '/assets/images/header-960.webp')
+			header: await dynamicImageTheme(fetch, '/assets/images/header-960.webp'),
+			education: await dynamicImageTheme(fetch, '/assets/images/education-960.webp')
 		}
 	};
 }) satisfies PageServerLoad;

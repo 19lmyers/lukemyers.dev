@@ -22,10 +22,10 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-  import { ButtonType } from "./types";
-  import { elevated, filled, outlined, text, tonal } from "./Button.css";
+	import { ButtonType } from './types';
+	import { elevated, filled, outlined, text, tonal } from './Button.css';
 
-  export let type = ButtonType.Filled;
+	export let type = ButtonType.Filled;
 
 	export let href: string | null = null;
 	export let disabled = false;
