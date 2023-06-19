@@ -141,6 +141,7 @@
 					<li>Database System Applications</li>
 					<li>Web Client Languages</li>
 					<li>Online Database Analytics Applications</li>
+					<li>AI: Search and Reasoning</li>
 				</ul>
 			</svelte:fragment>
 		</HeroCard>
