@@ -158,13 +158,14 @@
 				<!-- Q3 2019 -->
 				<li>1+ years of Kotlin experience</li>
 				<!-- Q3 2021 -->
-				<li>Experience with Jetpack Compose, Retrofit, Room, Hilt, and other libraries</li>
+				<li>Experience with Retrofit, Room, Hilt, and other libraries</li>
 			</ul>
 			<ul class={flexList}>
-				<li>Worked with C, C++, C#, SQL, and other programming languages</li>
-				<li>Application design with Google’s Material Design system</li>
+				<li>Worked with Python, C, C++, C#, SQL, and other programming languages</li>
+				<li>
+					Application design with Google’s Material Design system, Jetpack Compose, and SwiftUI
+				</li>
 				<li>Web development in HTML/CSS/TypeScript</li>
-				<li>Basic game development with Unity, Godot</li>
 			</ul>
 		</FlexLayout>
 	</PageSection>
@@ -175,18 +176,35 @@
 		<FlexLayout>
 			<Card>
 				<svelte:fragment slot="content">
-					<Heading>Tasks (KMM)</Heading>
+					<Heading>Tasks (chara.dev)</Heading>
 					<p><em>2022 – 2023</em></p>
 					<p>&nbsp;</p>
 					<p>
-						Created a functional and colorful tasks app with Kotlin Multiplatform Mobile. Built with
-						Koin, Ktor, SQLDelight, and Jetpack Compose.
+						Created a functional and colorful tasks app with Kotlin Multiplatform Mobile, Ktor, and
+						SvelteKit. Features a unique and friendly design, a home-rolled account system, and
+						cross-device sync. Available on all major web and mobile platforms.
+					</p>
+					<p>
+						Built with Koin, SQLDelight, Jetpack Compose, & SwiftUI on mobile; Ktor, MariaDB,
+						Firebase Cloud Messaging, & Quartz Scheduler on the backend; and TypeScript on the web.
 					</p>
 				</svelte:fragment>
 				<svelte:fragment slot="actions">
+					<Button href="https://tasks.chara.dev">
+						<Icon>app_shortcut</Icon>
+						<p>Launch</p>
+					</Button>
 					<Button href="https://github.com/19lmyers/tasks-kmm">
-						<Icon>open_in_new</Icon>
-						<p>View on GitHub</p>
+						<Icon>code</Icon>
+						<p>Mobile</p>
+					</Button>
+					<Button href="https://github.com/19lmyers/tasks.chara.dev">
+						<Icon>code</Icon>
+						<p>Web</p>
+					</Button>
+					<Button href="https://github.com/19lmyers/tasks-backend">
+						<Icon>code</Icon>
+						<p>Backend</p>
 					</Button>
 				</svelte:fragment>
 			</Card>
@@ -202,7 +220,7 @@
 				</svelte:fragment>
 				<svelte:fragment slot="actions">
 					<Button href="https://github.com/19lmyers/lukemyers.dev">
-						<Icon>open_in_new</Icon>
+						<Icon>code</Icon>
 						<p>View on GitHub</p>
 					</Button>
 				</svelte:fragment>
@@ -221,7 +239,7 @@
 				</svelte:fragment>
 				<svelte:fragment slot="actions">
 					<Button href="https://github.com/19lmyers/ThunderScout">
-						<Icon>open_in_new</Icon>
+						<Icon>code</Icon>
 						<p>View on GitHub</p>
 					</Button>
 				</svelte:fragment>
