@@ -30,12 +30,12 @@ export const header = style({
 	margin: '1.5rem',
 	'@media': {
 		'(prefers-color-scheme: light)': {
-			color: themeContract.colorSchemes.light.onSurfaceVariant,
-			backgroundColor: themeContract.colorSchemes.light.surfaceVariant
+			backgroundColor: themeContract.colorSchemes.light.surfaceContainerHigh,
+			color: themeContract.colorSchemes.light.onSurface
 		},
 		'(prefers-color-scheme: dark)': {
-			color: themeContract.colorSchemes.dark.onSurfaceVariant,
-			backgroundColor: themeContract.colorSchemes.dark.surfaceVariant
+			backgroundColor: themeContract.colorSchemes.dark.surfaceContainerHigh,
+			color: themeContract.colorSchemes.dark.onSurface
 		},
 		'screen and (min-width: 640px)': {
 			width: 'auto',
@@ -77,12 +77,12 @@ export const card = style({
 			minWidth: '400px'
 		},
 		'screen and (min-width: 640px) and (prefers-color-scheme: light)': {
-			color: themeContract.colorSchemes.light.onSurfaceVariant,
-			backgroundColor: themeContract.colorSchemes.light.surfaceVariant
+			backgroundColor: themeContract.colorSchemes.light.surfaceContainerHigh,
+			color: themeContract.colorSchemes.light.onSurface
 		},
 		'screen and (min-width: 640px) and (prefers-color-scheme: dark)': {
-			color: themeContract.colorSchemes.dark.onSurfaceVariant,
-			backgroundColor: themeContract.colorSchemes.dark.surfaceVariant
+			backgroundColor: themeContract.colorSchemes.dark.surfaceContainerHigh,
+			color: themeContract.colorSchemes.dark.onSurface
 		}
 	}
 });

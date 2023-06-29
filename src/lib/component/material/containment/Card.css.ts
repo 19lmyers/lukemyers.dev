@@ -62,11 +62,11 @@ export const filled = style([
 	{
 		'@media': {
 			'(prefers-color-scheme: light)': {
-				backgroundColor: themeContract.colorSchemes.light.surfaceVariant,
-				color: themeContract.colorSchemes.light.onSurfaceVariant
+				backgroundColor: themeContract.colorSchemes.light.surfaceContainerHigh,
+				color: themeContract.colorSchemes.light.onSurface
 			},
 			'(prefers-color-scheme: dark)': {
-				backgroundColor: themeContract.colorSchemes.dark.surfaceVariant,
+				backgroundColor: themeContract.colorSchemes.dark.surfaceContainerHigh,
 				color: themeContract.colorSchemes.dark.onSurfaceVariant
 			}
 		}
