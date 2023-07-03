@@ -192,19 +192,11 @@
 				<svelte:fragment slot="actions">
 					<Button href="https://tasks.chara.dev">
 						<Icon>app_shortcut</Icon>
-						<p>Launch</p>
+						<p>Launch (Web)</p>
 					</Button>
 					<Button href="https://github.com/19lmyers/tasks-kmm">
 						<Icon>code</Icon>
-						<p>Mobile</p>
-					</Button>
-					<Button href="https://github.com/19lmyers/tasks.chara.dev">
-						<Icon>code</Icon>
-						<p>Web</p>
-					</Button>
-					<Button href="https://github.com/19lmyers/tasks-backend">
-						<Icon>code</Icon>
-						<p>Backend</p>
+						<p>View on GitHub (Mobile)</p>
 					</Button>
 				</svelte:fragment>
 			</Card>
