@@ -132,5 +132,6 @@ export const content = style({
 export const actions = style({
 	marginTop: '0.75rem',
 	display: 'flex',
-	justifyContent: 'flex-end'
+	justifyContent: 'flex-end',
+	flexWrap: 'wrap'
 });
