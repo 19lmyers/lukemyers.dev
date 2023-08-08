@@ -49,10 +49,7 @@
 <SiteHeader style={data.theme.header}>
 	<svelte:fragment slot="content">
 		<Heading>Hello, I'm Luke</Heading>
-		<Subhead>
-			Computer Science student at the University of California San Diego. Passionate about Android
-			app design & development.
-		</Subhead>
+		<Subhead>UCSD CSE '23. Passionate about Android app design & development.</Subhead>
 	</svelte:fragment>
 	<svelte:fragment slot="image">
 		<img
@@ -128,9 +125,9 @@
 			</svelte:fragment>
 			<svelte:fragment slot="content">
 				<p>
-					In 2023, I will graduate from the <strong>University of California San Diego</strong> with
-					a bachelor's in computer science. My degree gave me hands-on and theoretical experience with
-					areas including algorithms, computer architecture, machine learning, and software engineering.
+					In 2023, I graduated from the <strong>University of California San Diego</strong> with a bachelor's
+					in computer science. My degree gave me hands-on and theoretical experience with areas including
+					algorithms, computer architecture, machine learning, and software engineering.
 				</p>
 				<p>&nbsp;</p>
 				<strong>Coursework includes:</strong>
@@ -142,6 +139,7 @@
 					<li>Web Client Languages</li>
 					<li>Online Database Analytics Applications</li>
 					<li>AI: Search and Reasoning</li>
+					<li>Intro to Machine Learning</li>
 				</ul>
 			</svelte:fragment>
 		</HeroCard>
@@ -154,18 +152,20 @@
 			<ul class={flexList}>
 				<li>7+ years of Java experience</li>
 				<!-- Q3 2015 -->
-				<li>3+ years of Android experience</li>
+				<li>4+ years of Android experience</li>
 				<!-- Q3 2019 -->
-				<li>1+ years of Kotlin experience</li>
+				<li>2+ years of Kotlin experience</li>
 				<!-- Q3 2021 -->
 				<li>Experience with Retrofit, Room, Hilt, and other libraries</li>
 			</ul>
 			<ul class={flexList}>
 				<li>Worked with Python, C, C++, C#, SQL, and other programming languages</li>
 				<li>
-					Application design with Google’s Material Design system, Jetpack Compose, and SwiftUI
+					Application design with Google’s Material Design system, Jetpack Compose, and Kotlin
+					Multiplatform
 				</li>
-				<li>Web development in HTML/CSS/TypeScript</li>
+				<li>Frontend website development in HTML/CSS/TypeScript</li>
+				<li>Backend development in Kotlin & Ktor (REST, ROP)</li>
 			</ul>
 		</FlexLayout>
 	</PageSection>
@@ -180,13 +180,15 @@
 					<p><em>2022 – 2023</em></p>
 					<p>&nbsp;</p>
 					<p>
-						Created a functional and colorful tasks app with Kotlin Multiplatform Mobile, Ktor, and
+						Created a functional and colorful tasks app with Kotlin Multiplatform, Ktor, and
 						SvelteKit. Features a unique and friendly design, a home-rolled account system, and
 						cross-device sync. Available on all major web and mobile platforms.
 					</p>
+					<p>&nbsp;</p>
 					<p>
-						Built with Koin, SQLDelight, Jetpack Compose, & SwiftUI on mobile; Ktor, MariaDB,
-						Firebase Cloud Messaging, & Quartz Scheduler on the backend; and TypeScript on the web.
+						Built with Koin, SQLDelight, Compose Multiplatform, & Decompose on mobile; Ktor,
+						MariaDB, Firebase Cloud Messaging, & Quartz Scheduler on the backend; and TypeScript on
+						the web.
 					</p>
 				</svelte:fragment>
 				<svelte:fragment slot="actions">
