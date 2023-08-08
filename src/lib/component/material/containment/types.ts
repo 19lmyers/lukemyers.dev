@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-export enum CardType {
+export enum CardStyle {
 	Elevated,
 	Filled,
 	Outlined

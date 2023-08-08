@@ -24,23 +24,22 @@
 <script lang="ts">
 	import { Section } from '$lib/component';
 
-	import { CardType } from './types';
+	import { CardStyle } from './types';
 	import { actions, content, elevated, filled, outlined, picture } from './Card.css';
 
-	export let type = CardType.Filled;
-	export let style: string | null = null;
+	export let style = CardStyle.Filled;
 
-	let className: string;
-	if (type === CardType.Filled) {
-		className = filled;
-	} else if (type === CardType.Outlined) {
-		className = outlined;
+	let styleClass: string;
+	if (style === CardStyle.Filled) {
+		styleClass = filled;
+	} else if (style === CardStyle.Outlined) {
+		styleClass = outlined;
 	} else {
-		className = elevated;
+		styleClass = elevated;
 	}
 </script>
 
-<Section {className} {style}>
+<Section className={styleClass}>
 	{#if $$slots.image}
 		<picture class={picture}>
 			<slot name="image" />

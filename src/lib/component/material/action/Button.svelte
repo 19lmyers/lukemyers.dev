@@ -22,34 +22,34 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-	import { ButtonType } from './types';
+	import { ButtonStyle } from './types';
 	import { elevated, filled, outlined, text, tonal } from './Button.css';
 
-	export let type = ButtonType.Filled;
+	export let style = ButtonStyle.Filled;
 
 	export let href: string | null = null;
 	export let disabled = false;
 
-	let className: string;
-	if (type === ButtonType.Filled) {
-		className = filled;
-	} else if (type === ButtonType.Outlined) {
-		className = outlined;
-	} else if (type === ButtonType.Tonal) {
-		className = tonal;
-	} else if (type === ButtonType.Text) {
-		className = text;
+	let styleClass: string;
+	if (style === ButtonStyle.Filled) {
+		styleClass = filled;
+	} else if (style === ButtonStyle.Outlined) {
+		styleClass = outlined;
+	} else if (style === ButtonStyle.Tonal) {
+		styleClass = tonal;
+	} else if (style === ButtonStyle.Text) {
+		styleClass = text;
 	} else {
-		className = elevated;
+		styleClass = elevated;
 	}
 </script>
 
 {#if href}
-	<a class={className} {href}>
+	<a class={styleClass} {href}>
 		<slot />
 	</a>
 {:else}
-	<button class={className} {disabled}>
+	<button class={styleClass} {disabled}>
 		<slot />
 	</button>
 {/if}

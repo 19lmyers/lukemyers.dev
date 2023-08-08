@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-export enum ButtonType {
+export enum ButtonStyle {
 	Elevated,
 	Filled,
 	Tonal,
