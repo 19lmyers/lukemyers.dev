@@ -70,7 +70,7 @@
 				<svelte:fragment slot="content">
 					<Heading>Student Programmer (Android)</Heading>
 					<p><strong>Qualcomm Institute @ UC San Diego</strong></p>
-					<p><em>Aug 2021 – Present</em></p>
+					<p>2021 – 2023</p>
 					<p>&nbsp;</p>
 					<p>
 						Developed and maintained multiple Android applications; worked as the Android developer
@@ -81,8 +81,8 @@
 			<Card>
 				<svelte:fragment slot="content">
 					<Heading>Computer Science Tutor</Heading>
-					<p><strong>UC San Diego</strong></p>
-					<p><em>Jan – Jun 2021</em></p>
+					<p><strong>UC San Diego CSE Department</strong></p>
+					<p>2021</p>
 					<p>&nbsp;</p>
 					<p>
 						Tutor for CSE 12 (Data Structures) + CSE 15L for two quarters. Graded programming
@@ -95,7 +95,7 @@
 				<svelte:fragment slot="content">
 					<Heading>Lead Programmer & Co-Captain</Heading>
 					<p><strong>FRC Team 980 ThunderBots</strong></p>
-					<p><em>Sep 2015 – Aug 2019</em></p>
+					<p>2015 – 2019</p>
 					<p>&nbsp;</p>
 					<p>
 						Programmed four robots (C++ and Java) and two Arduino coprocessors over three
@@ -160,10 +160,7 @@
 			</ul>
 			<ul class={flexList}>
 				<li>Worked with Python, C, C++, C#, SQL, and other programming languages</li>
-				<li>
-					Application design with Google’s Material Design system, Jetpack Compose, and Kotlin
-					Multiplatform
-				</li>
+				<li>Application design with Google’s Material Design system & Jetpack Compose</li>
 				<li>Frontend website development in HTML/CSS/TypeScript</li>
 				<li>Backend development in Kotlin & Ktor (REST, ROP)</li>
 			</ul>
@@ -177,7 +174,7 @@
 			<Card>
 				<svelte:fragment slot="content">
 					<Heading>Tasks (chara.dev)</Heading>
-					<p><em>2022 – 2023</em></p>
+					<p>2022 – 2023</p>
 					<p>&nbsp;</p>
 					<p>
 						Created a functional and colorful tasks app with Kotlin Multiplatform, Ktor, and
@@ -205,7 +202,7 @@
 			<Card>
 				<svelte:fragment slot="content">
 					<Heading>Portfolio Website</Heading>
-					<p><em>Jan – Feb 2023</em></p>
+					<p>2023</p>
 					<p>&nbsp;</p>
 					<p>
 						Created a fully server-side portfolio website using SvelteKit and Material Design.
@@ -222,7 +219,7 @@
 			<Card>
 				<svelte:fragment slot="content">
 					<Heading>ThunderScout 3</Heading>
-					<p><em>2021</em></p>
+					<p>2021</p>
 					<p>&nbsp;</p>
 					<p>
 						Redesigned and rebuilt my Android-based scouting app for FIRST Robotics Competition
