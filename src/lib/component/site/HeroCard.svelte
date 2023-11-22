@@ -22,17 +22,28 @@
   - SOFTWARE.
   -->
 <script lang="ts">
-	import { card, hero, picture } from './HeroCard.css';
+	import { card, cardLeft, cardRight, hero, heroReverse, picture } from './HeroCard.css';
+
+	export let cardPosition: 'left' | 'right' = 'left';
 
 	export let style: string | null = null;
 </script>
 
-{#if $$slots.image}
+{#if $$slots.image && cardPosition === 'left'}
+	<div {style} class={heroReverse}>
+		<picture class={picture}>
+			<slot name="image" />
+		</picture>
+		<div class={cardLeft}>
+			<slot name="content" />
+		</div>
+	</div>
+{:else if $$slots.image && cardPosition === 'right'}
 	<div {style} class={hero}>
 		<picture class={picture}>
 			<slot name="image" />
 		</picture>
-		<div class={card}>
+		<div class={cardRight}>
 			<slot name="content" />
 		</div>
 	</div>

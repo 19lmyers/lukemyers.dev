@@ -68,13 +68,32 @@
 		<FlexLayout>
 			<Card>
 				<svelte:fragment slot="content">
-					<Heading>Student Programmer (Android)</Heading>
-					<p><strong>Qualcomm Institute @ UC San Diego</strong></p>
+					<Heading>Online Tutor</Heading>
+					<p><strong>The Princeton Review</strong></p>
+					<p>2023</p>
+					<p>&nbsp;</p>
+					<p>
+						Tutor for The Princeton Review’s Tutor.com online tutoring service. Assisted K-12 and
+						college students in subjects including computer science principles, Java, SQL databases,
+						and web development.
+					</p>
+				</svelte:fragment>
+			</Card>
+			<Card>
+				<svelte:fragment slot="content">
+					<Heading>Student Android Developer</Heading>
+					<p><strong>Qualcomm Institute @ UCSD</strong></p>
 					<p>2021 – 2023</p>
 					<p>&nbsp;</p>
 					<p>
 						Developed and maintained multiple Android applications; worked as the Android developer
 						on a team of mobile, web, and backend developers.
+					</p>
+					<p>&nbsp;</p>
+					<p>
+						Projects include: a survey app for a cancer research study conducted by UCSD and the MD
+						Anderson Cancer Center; a prototype SDK that collects device data for use in user
+						fingerprinting and authentication; and others.
 					</p>
 				</svelte:fragment>
 			</Card>
@@ -91,30 +110,12 @@
 					</p>
 				</svelte:fragment>
 			</Card>
-			<Card>
-				<svelte:fragment slot="content">
-					<Heading>Lead Programmer & Co-Captain</Heading>
-					<p><strong>FRC Team 980 ThunderBots</strong></p>
-					<p>2015 – 2019</p>
-					<p>&nbsp;</p>
-					<p>
-						Programmed four robots (C++ and Java) and two Arduino coprocessors over three
-						competition seasons; developed the original ThunderScout Android app with Android Studio
-						over 3+ years.
-					</p>
-					<p>&nbsp;</p>
-					<p>
-						Took leadership in multiple team programs and initiatives, including competitions and
-						off-season volunteering; assumed the position of co-captain in my final year.
-					</p>
-				</svelte:fragment>
-			</Card>
 		</FlexLayout>
 	</PageSection>
 
 	<PageSection>
 		<Heading>Education</Heading>
-		<HeroCard style={data.theme.education}>
+		<HeroCard cardPosition="right" style={data.theme.education}>
 			<svelte:fragment slot="image">
 				<img
 					alt="Me in my graduation regalia!"
@@ -143,6 +144,37 @@
 				</ul>
 			</svelte:fragment>
 		</HeroCard>
+		<HeroCard style={data.theme.robotics}>
+			<svelte:fragment slot="image">
+				<img
+					alt="Me at a robotics competition!"
+					sizes="50svw"
+					src="/assets/images/robotics-960.webp"
+					srcset="/assets/images/robotics-640.webp 640w, /assets/images/robotics-960.webp 960w, /assets/images/robotics-1920.webp 1920w"
+				/>
+			</svelte:fragment>
+			<svelte:fragment slot="content">
+				<p>
+					In high school, I joined <strong>FRC Team 980 ThunderBots</strong>, where I worked with my
+					peers to design, build, and program robots to compete in the
+					<strong>FIRST Robotics Competition</strong> each year.
+				</p>
+				<p>&nbsp;</p>
+				<p>
+					I took charge of programming four robots (C++ and Java) and two Arduino coprocessors over
+					three competition seasons. I used this opportunity to investigate multiple programming
+					languages and build systems, design and test autonomous route plans, and integrate vision
+					systems that assist the human operators in scoring game pieces.
+				</p>
+				<p>&nbsp;</p>
+				<p>
+					I also took leadership in multiple team programs and initiatives, including our LEGO
+					Robo-Camp in the off-season, for which I revised the curriculum and participated in the
+					instruction of young kids in how to design their own robots. I was then promoted to
+					co-captain in my final year of high school.
+				</p>
+			</svelte:fragment>
+		</HeroCard>
 	</PageSection>
 
 	<PageSection>
@@ -150,18 +182,13 @@
 
 		<FlexLayout>
 			<ul class={flexList}>
-				<li>7+ years of Java experience</li>
-				<!-- Q3 2015 -->
-				<li>4+ years of Android experience</li>
-				<!-- Q3 2019 -->
-				<li>2+ years of Kotlin experience</li>
-				<!-- Q3 2021 -->
-				<li>Experience with Retrofit, Room, Hilt, and other libraries</li>
+				<li>Professional experience with Java, Android, and Kotlin</li>
+				<li>Developed with Retrofit, Room, Hilt, and other libraries</li>
+				<li>Worked with Python, C, C++, C#, SQL, and other programming languages</li>
 			</ul>
 			<ul class={flexList}>
-				<li>Worked with Python, C, C++, C#, SQL, and other programming languages</li>
 				<li>Application design with Google’s Material Design system & Jetpack Compose</li>
-				<li>Frontend website development in HTML/CSS/TypeScript</li>
+				<li>Frontend website development in Svelte (HTML/CSS/TypeScript)</li>
 				<li>Backend development in Kotlin & Ktor (REST, ROP)</li>
 			</ul>
 		</FlexLayout>

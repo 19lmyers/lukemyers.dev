@@ -23,13 +23,15 @@
  */
 
 import type { PageServerLoad } from './$types';
-import { dynamicImageTheme } from '$lib/theme';
+import { dynamicColorTheme } from '$lib/theme';
 
-export const load = (async ({ fetch }) => {
+export const load = (async () => {
 	return {
 		theme: {
-			header: await dynamicImageTheme(fetch, '/assets/images/header-960.webp'),
-			education: await dynamicImageTheme(fetch, '/assets/images/education-960.webp')
+			// images are seemingly broken, so we'll hard code the colors for now
+			header: dynamicColorTheme('#78C0E9'),
+			education: dynamicColorTheme('#AAFF00'),
+			robotics: dynamicColorTheme('#fbc02d')
 		}
 	};
 }) satisfies PageServerLoad;

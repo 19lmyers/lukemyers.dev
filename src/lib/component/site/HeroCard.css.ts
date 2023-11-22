@@ -27,6 +27,8 @@ import { themeContract } from '$lib/theme';
 
 export const hero = style({
 	borderRadius: '1.5rem',
+	marginTop: '1.5rem',
+	marginBottom: '1.5rem',
 	'@media': {
 		'(prefers-color-scheme: light)': {
 			color: themeContract.colorSchemes.light.onSurfaceVariant,
@@ -55,24 +57,33 @@ export const hero = style({
 	}
 });
 
+export const heroReverse = style([
+	hero,
+	{
+		'@media': {
+			'screen and (min-width: 640px)': {
+				flexDirection: 'row-reverse'
+			}
+		}
+	}
+]);
+
 export const card = style({
 	padding: '1.5rem',
 	minWidth: '250px',
 	overflowWrap: 'normal',
 	'@media': {
 		'screen and (min-width: 640px)': {
-			minWidth: '275px',
+			minWidth: '325px',
 			height: 'min-content',
 			padding: '2rem',
-			marginLeft: '1.5rem',
 			borderRadius: '1.5rem'
 		},
 		'screen and (min-width: 860px)': {
-			marginLeft: '3rem',
-			minWidth: '300px'
+			minWidth: '400px'
 		},
 		'screen and (min-width: 1280px)': {
-			minWidth: '400px'
+			minWidth: '600px'
 		},
 		'screen and (min-width: 640px) and (prefers-color-scheme: light)': {
 			backgroundColor: themeContract.colorSchemes.light.surfaceContainerHigh,
@@ -84,6 +95,34 @@ export const card = style({
 		}
 	}
 });
+
+export const cardLeft = style([
+	card,
+	{
+		'@media': {
+			'screen and (min-width: 640px)': {
+				marginRight: '1.5rem'
+			},
+			'screen and (min-width: 860px)': {
+				marginRight: '3rem'
+			}
+		}
+	}
+]);
+
+export const cardRight = style([
+	card,
+	{
+		'@media': {
+			'screen and (min-width: 640px)': {
+				marginLeft: '1.5rem'
+			},
+			'screen and (min-width: 860px)': {
+				marginLeft: '3rem'
+			}
+		}
+	}
+]);
 
 export const picture = style({
 	display: 'flex',
