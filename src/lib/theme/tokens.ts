@@ -62,7 +62,9 @@ export async function themeTokensFromImage(imageData: ArrayBuffer) {
 }
 
 export function themeTokensFromHex(hexColor: string) {
-	const theme = themeFromSourceColor(argbFromHex(hexColor));
+	const theme = themeFromSourceColor(argbFromHex(hexColor), undefined, {
+		variant: 'Vibrant'
+	});
 	return createThemeTokens(theme);
 }
 

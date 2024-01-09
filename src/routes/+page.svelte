@@ -70,7 +70,7 @@
 				<svelte:fragment slot="content">
 					<Heading>Online Tutor</Heading>
 					<p><strong>The Princeton Review</strong></p>
-					<p>2023</p>
+					<p>2023 – 2024</p>
 					<p>&nbsp;</p>
 					<p>
 						Tutor for The Princeton Review’s Tutor.com online tutoring service. Assisted K-12 and
