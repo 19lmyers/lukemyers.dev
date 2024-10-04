@@ -23,25 +23,6 @@ export default function Home() {
                     />
                 </div>
             </header>
-            <aside className={styles.callout}>
-                <h2 className={sourceCodePro.className}>Tutoring & Consultation Services</h2>
-                <p>Need help with understanding an assignment you&apos;re working on, or iterating on an application
-                    you&apos;re developing? I have the skills and experience to help you succeed!</p>
-                <p>I currently offer <strong>tutoring and consultation services</strong> in the following subjects:</p>
-                <ul>
-                    <li>Computer Programming (Java, related)</li>
-                    <li>Web Development (HTML/CSS/JavaScript, TypeScript, React)</li>
-                    <li>Database Systems (SQL)</li>
-                    <li>Mobile App Development (Android)</li>
-                    <li>Linux System Administration</li>
-                </ul>
-                <p>If that interests you, feel free to contact me or book an appointment directly!</p>
-                <div className={`${styles.buttonRow} ${sourceCodePro.className}`}>
-                    <a className={styles.button} href="mailto:luke@lukemyers.dev">Contact</a>
-                    <a className={styles.button} href="https://calendar.app.google/Yvkeb9ZqapnynMZ48">Book
-                        Appointment</a>
-                </div>
-            </aside>
             <main>
                 <section className={styles.section}>
                     <h2 className={sourceCodePro.className}>Experience</h2>
