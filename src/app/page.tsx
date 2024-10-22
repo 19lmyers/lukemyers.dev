@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 
 import headerImage from './header.jpg'
 import educationImage from './education.jpg'
+import Link from "next/link";
 
 const sourceCodePro = Source_Code_Pro({subsets: ["latin"]});
 
@@ -184,11 +185,11 @@ export default function Home() {
                 </section>
             </main>
             <footer className={styles.pageFooter}>
-                <nav className="ccytv53"><a className="_1xebasn1 _1xebasn0" href="/">Luke Myers</a></nav>
+                <nav className="ccytv53"><Link className="_1xebasn1 _1xebasn0" href="/">Luke Myers</Link></nav>
                 <nav className="ccytv54 ccytv52" role="none">
                     <a href="/resume.pdf">Resume</a>
                     <a href="https://github.com/19lmyers">GitHub</a>
-                    <a  href="https://www.linkedin.com/in/luke-myers-dev/">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/luke-myers-dev/">LinkedIn</a>
                 </nav>
             </footer>
         </>
