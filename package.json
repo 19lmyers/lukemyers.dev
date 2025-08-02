@@ -5,11 +5,14 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
-    "serve": "serve out",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^15.4.1",
+    "@opennextjs/cloudflare": "^1.6.3",
+    "next": "15.3.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "sharp": "^0.33.5"
@@ -20,8 +23,8 @@
     "@types/react-dom": "^19.1.6",
     "eslint": "^8.57.1",
     "eslint-config-next": "^15.4.1",
-    "serve": "^14.2.4",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "wrangler": "^4.27.0"
   },
-  "packageManager": "pnpm@10.12.2+sha512.a32540185b964ee30bb4e979e405adc6af59226b438ee4cc19f9e8773667a66d302f5bfee60a39d3cac69e35e4b96e708a71dd002b7e9359c4112a1722ac323f"
+  "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748"
 }
