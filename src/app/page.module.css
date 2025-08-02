@@ -133,8 +133,8 @@
 .card {
     border-radius: 1.5rem;
     padding: 1.5rem;
-    background-color: var(--md-sys-color-surface-container);
-    color: var(--md-sys-color-on-surface);
+    background-color: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
@@ -165,8 +165,8 @@
 
 /* Hero Image/Text Layout */
 .hero {
-    background-color: var(--md-sys-color-surface-container);
-    color: var(--md-sys-color-on-surface);
+    background-color: var(--md-sys-color-tertiary-container);
+    color: var(--md-sys-color-on-tertiary-container);
 
     margin: 1rem 1rem 0;
 }
@@ -177,6 +177,14 @@
 
 .heroText {
     padding: 1.5rem;
+}
+
+.heroText h1 {
+    color: var(--md-sys-color-on-tertiary-container);
+}
+
+.heroHeading {
+    color: var(--md-sys-color-tertiary);
 }
 
 .heroText ul {

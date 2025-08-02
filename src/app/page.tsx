@@ -15,7 +15,7 @@ export default function Home() {
             <header className={`${styles.hero} ${styles.pageHeader}`}>
                 <div className={styles.heroText}>
                     <h1 className={sourceCodePro.className}>Luke Myers</h1>
-                    <p>Computer Science Tutor & Full-Stack Application Developer</p>
+                    <p>Software Engineer</p>
                 </div>
                 <div className={styles.heroImage}>
                     <Image src={headerImage}
@@ -29,9 +29,25 @@ export default function Home() {
                     <h2 className={sourceCodePro.className}>Experience</h2>
                     <div className={styles.cardLayout}>
                         <div className={styles.card}>
+                            <h3 className={sourceCodePro.className}>Software Engineer</h3>
+                            <strong>New Directions Technologies Inc.</strong>
+                            <p>Nov 2024 – Present</p>
+                            <p>&nbsp;</p>
+                            <ul>
+                                <li>Developed software products to support testing & test automation efforts for a US Navy organization
+                                </li>
+                                <li>Established documentation and developed usage protocols for users of team-developed products
+                                </li>
+                                <li>Utilized problem solving skills in collaboratively steering work efforts and planning team objectives
+                                </li>
+                                <li>Granted a secret-level security clearance to accomplish my duties
+                                </li>
+                            </ul>
+                        </div>
+                        <div className={styles.card}>
                             <h3 className={sourceCodePro.className}>Online Tutor</h3>
                             <strong>The Princeton Review</strong>
-                            <p>Sep 2023 – Present</p>
+                            <p>Sep 2023 – Nov 2024</p>
                             <p>&nbsp;</p>
                             <ul>
                                 <li>Assisted K-12 and college students one on one in subjects including computer science
@@ -103,7 +119,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section className={styles.section}>
-                    <h2 className={sourceCodePro.className}>Education</h2>
+                    <h2 className={`${sourceCodePro.className} ${styles.heroHeading}`}>Education</h2>
                     <div className={styles.hero}>
                         <div className={styles.heroImage}>
                             <Image src={educationImage}
